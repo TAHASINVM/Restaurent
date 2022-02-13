@@ -1,0 +1,131 @@
+.f-style{font-family: 'Satisfy', cursive;}
+ul{list-style: none;}
+p{font-family: 'Poppins', sans-serif;color: rgb(90, 88, 88);}
+*{transition: .5s;}
+html{scroll-behavior: smooth;}
+.bg{background-color: rgb(43, 43, 43);}
+
+
+#scroll{position: fixed;bottom: 50px; right: 30px;border-radius: 8px;cursor: pointer;z-index: 1; transition: .5s;box-shadow: none;}
+#scroll:hover{color: white!important;}
+
+/* header */
+
+header{height:100px;transition: 1s;}
+header a{font-weight: bold!important;}
+header .navbar{transition: .5s;}
+header li,header .btn{transition: .5s;text-align: center;}
+header li:hover{background-color: #ffc107}
+header li:hover a{color: black!important}
+header .active a{color: gold!important;}
+header .dropdown-item:hover{background-color: gold;color: black!important;}
+.navbar-scroll{
+    background: rgb(43, 42, 42);
+    box-shadow: 1px 1px 10px 1px rgba(34, 34, 34, 0.699);
+    transition: .5s;
+    height: 80px;
+}
+
+/* hero */
+
+#hero{height: 100vh;background: black;}
+#hero .carousel-item img{height: 100vh; object-fit: cover;filter: opacity(30%);}
+#hero .carousel-caption h1{font-weight: bold;}
+#hero .carousel-caption button{background-color: transparent;border-color: #ffc107;font-weight: bold;transition: .5s;}
+#hero .carousel-caption button:hover{background-color: #ffc107;color: white;}
+#hero .carousel-caption{top: 200px;
+    /* border-radius: 15px;background-color: rgba(0, 0, 0, 0.479);bottom:20%; */
+}
+
+/* about */
+
+#about ul li{font-size: 20px;color: chocolate;}
+#about .card{border-radius: 6px;transition: .5s;}
+#about .card h1{text-shadow: 1px 1px 3px grey;}
+#about .card{box-shadow: 0px 0px 4px 0px grey;}
+#about .card:hover{box-shadow: 5px 5px 7px 1px grey;margin-top:-10px!important;}
+
+/* menu */
+
+#menu ul.nav button{font-weight: bold;border-color: #ffc107;transition: .5s;}
+#menu ul.nav button:focus{box-shadow: none;}
+#menu ul.nav button:hover{background-color: #ffc107;color: white;}
+#menu ul.nav .active{background-color: #ffc107;}
+#menu .menu-price{width: 15%;}
+#menu .menu-item{position: relative;overflow: hidden;width: 83%;} 
+#menu .menu-item::after{
+    content: "";
+    width:100%;
+    background-color: grey;
+    height: 1px;
+    position: absolute;
+    top:60%
+} 
+
+/* specials */
+#special div.nav button{font-weight: bold;text-align: left;font-size: 20px;}
+#special div.nav button:focus{box-shadow: none;}
+#special div.nav .active{background-color: transparent!important;color:#ffc107;border-right: 2px solid #ffc107;}
+#special .media img{width: 150px;height: 150px;}
+
+/* events */
+
+#event{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.562),rgba(0, 0, 0, 0.562)), url(https://wallpaperaccess.com/full/1490234.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+#event #slide-event{position: relative;}
+#event img{object-fit: cover;}
+
+
+/* book a table */
+
+#book-table button{transition: .5s;}
+#book-table .card{box-shadow: 1px 1px 10px 1px rgb(189, 187, 187);}
+
+/* gallery */
+
+#gallery img{object-fit: cover;width: 100%;}
+
+/* chef */
+
+#chef{
+    background-image: linear-gradient(rgba(255, 251, 251, 0.678),rgba(255, 251, 251, 0.678)),url(https://images.unsplash.com/photo-1631100732613-6b65da9a343d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#chef img{object-fit: cover;}
+#chef .chef-main{position: relative;}
+#chef .chef-main .chef-sub{position: absolute;left: 50%;transform: translate(-50%);top:80%;box-shadow: 1px 1px 5px 1px rgb(160, 159, 159);}
+
+/* testmonial */
+
+#testimonial{height: auto}
+#testimonial .carousel-item img{height: 150px;width: 150px;border-radius: 50%;object-fit: cover;border: 8px solid grey;}
+#testimonial{ 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.678),rgba(0, 0, 0, 0.678)),url(https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#testimonial ol li.active{background-color: #ffc107;}
+
+/* contact-us */
+
+#contact-us .media .cu-icon{background: rgb(238, 208, 188);width: 50px; height: 50px;font-size: 20px;color: rgb(243, 153, 93);margin: 5px;}
+
+/* footer */
+
+#footer{background: rgb(88, 76, 76);}
+#footer .d-flex div{background: grey;width: 40px;height: 40px;display: flex;justify-content: center;align-items: center;border-radius: 50%;}
+
+@media only screen and (max-width: 991px) {
+    #navbarNavDropdown{
+        background-color: rgb(158, 155, 155);
+        padding: 2rem;
+        border-radius: 3rem;
+    }
+}
+
